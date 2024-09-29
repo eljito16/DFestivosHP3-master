@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DFestivosHP3.Aplicacion\DFestivosHP3.Aplicacion.csproj" />
+    <ProjectReference Include="..\DFestivosHP3.Core\DFestivosHP3.Core.csproj" />
+    <ProjectReference Include="..\DFestivosHP3.Dominio\DFestivosHP3.Dominio.csproj" />
+    <ProjectReference Include="..\DFestivosHP3.Infraestructura.Persistencia\DFestivosHP3.Infraestructura.Persistencia.csproj" />
+    <ProjectReference Include="..\DFestivosHP3.Infraestructura.Repositorio\DFestivosHP3.Infraestructura.Repositorio.csproj" />
+  </ItemGroup>
+
+</Project>

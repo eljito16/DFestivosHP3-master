@@ -1,0 +1,6 @@
+@DFestivosHP3.Presentacion_HostAddress = http://localhost:5083
+
+GET {{DFestivosHP3.Presentacion_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
